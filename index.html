@@ -8,80 +8,102 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url("sagarmatha.jpg") no-repeat center center/cover;
-      min-height: 100vh;
+      color: white;
+      scroll-behavior: smooth;
     }
 
-    /* Overlay text */
-    .overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    /* Background */
+    header {
+      background: url("Mount Everest _ Height, Map, Deaths, Facts, & Climbers _ Britannica_page-0001.jpg") no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
     }
 
-    .overlay h1 {
-      font-size: 3rem;
-      color: white;
-      text-shadow: 2px 2px 10px black;
-    }
-
-    .overlay button {
-      margin-top: 20px;
-      padding: 12px 25px;
-      font-size: 1.2rem;
-      border: none;
-      border-radius: 8px;
-      background: #ffffffcc;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .overlay button:hover {
-      background: #ddd;
-    }
-
-    /* Navbar (top bar) */
+    /* Navbar */
     nav {
-      background: rgba(0,0,0,0.6);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.7);
       padding: 15px;
       display: flex;
       justify-content: center;
       gap: 30px;
-      position: fixed;
-      top: 0;
-      width: 100%;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      font-size: 1.1rem;
-      transition: color 0.3s;
+      font-weight: bold;
     }
 
     nav a:hover {
-      color: #ffd700;
+      color: yellow;
+    }
+
+    /* Section styles */
+    section {
+      padding: 80px 20px;
+      text-align: center;
+      background: #222;
+    }
+
+    #gallery {
+      background: #333;
+    }
+
+    #contact {
+      background: #444;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
+
   <!-- Navbar -->
   <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Gallery</a>
-    <a href="#">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Main content -->
-  <div class="overlay">
+  <!-- Home Section -->
+  <header id="home">
     <h1>Welcome to Sagarmatha View</h1>
-    <button>Explore More</button>
-  </div>
+    <p>Experience the beauty of the world's highest peak</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Sagarmatha</h2>
+    <p>
+      Sagarmatha, also known as Mount Everest, is the highest mountain in the world, standing at 8,848 meters.
+      It is located in the Himalayas and attracts climbers and adventurers from around the globe.
+    </p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Here will be stunning views of Sagarmatha.</p>
+    <img src="Mount Everest _ Height, Map, Deaths, Facts, & Climbers _ Britannica_page-0001.jpg" alt="Sagarmatha" width="400">
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: info@sagarmathaview.com</p>
+    <p>Phone: +977-9800000000</p>
+  </section>
+
 </body>
 </html>
-
-
-
